@@ -1,0 +1,63 @@
+.nav-menu {
+    background-color: #fff;
+    width: 360px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 850ms;
+    z-index: 11;
+  
+  }
+  
+  .nav-menu.active {
+    top: 0;
+
+    left: 0;
+    transition: 350ms;
+  }
+  
+  .sideBar_header{
+    height: 50px;
+    background-color: #232f3e;
+    display: flex;
+    justify-content: start;
+    padding-left: 30px;;
+    .sideBar_headerImage{
+      width: 40px;
+      height: 40px;
+      align-self: center;
+
+    }
+    .sideBar_headerHello {
+      font-weight: bold;
+      color: white;
+      align-self: center;
+      font-size: 20px;
+    }
+    .sideBar_headerCloseButton{
+      position: relative;
+      right: -185px;
+      top: 0;
+      height: 50px;
+      width: 50px;
+      font-size: 30px;;
+    }
+  }
+
+  .sideBar_menuList{
+    background-color: #ffffff;
+    height: 100%;
+    .sideBar_menuList_Title{
+       padding: 20px 0px 0px 30px;
+
+    }
+    .sideBar_menuList_item{
+      font-size: 14px;
+      padding: 10px 5px 10px 30px;
+      &:hover{
+        background-color: #dadada;
+      }
+    }
+  }
+  

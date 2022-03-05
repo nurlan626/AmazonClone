@@ -1,0 +1,32 @@
+.advertisementFour_main{
+    height: 420px;
+    width: 350px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .advertisementFour__header{
+        font-size: 21px;
+        line-height: 27px;
+        font-weight: bold;
+        padding: 15px;
+
+    }
+    .advertisementFour__body{
+        padding-left: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        > img{
+            width: 45%;
+        }
+
+    }
+    .advertisementFour__footer{
+        font-size: 13px;
+        padding: 15px;
+        color: #549fad;
+
+        
+    }
+}

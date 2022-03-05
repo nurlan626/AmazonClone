@@ -1,0 +1,29 @@
+.advertisementOne_main{
+    height: 420px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    .advertisementOne__header{
+        font-size: 21px;
+        line-height: 27px;
+        font-weight: bold;
+        padding: 15px;
+
+    }
+    .advertisementOne__body{
+        padding-left: 15px;
+        > img {
+            width: 300px;
+            height: 300px;
+        }
+
+    }
+    .advertisementOne__footer{
+        font-size: 13px;
+        padding: 15px;
+        color: #549fad;
+        
+    }
+}

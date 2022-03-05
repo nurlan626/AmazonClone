@@ -1,24 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import DisplayContent from './components/displayContent/DisplayContent';
+import Navbar from './components/navbar/Navbar';
+import SideBar from './components/navbar/sidebar/SideBar';
+import MainPage from './components/pages/mainPage/MainPage';
+import Slider from './components/pages/mainPage/slider/Slider';
 
 function App() {
+  const [sidebar, setSidebar] = useState(false);
+  const showSidebar = () => setSidebar(!sidebar);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar setSidebar={setSidebar} />
+      <SideBar sidebar={sidebar} showSidebar={showSidebar} />
+      <Slider />
+      <MainPage />
+
+
     </div>
   );
 }

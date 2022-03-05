@@ -1,0 +1,20 @@
+.mainPage {
+    width: 100vw;
+    background-size: 100vw;
+    background: none;
+    position: absolute;
+    top: 50%;
+    
+
+
+    
+}
+.advertisementBox{
+    margin: 0 auto;
+
+    width: 1465px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
